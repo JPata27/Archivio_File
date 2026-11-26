@@ -73,13 +73,11 @@ public class FileSender implements Runnable {
                 folder = Path.of(PARENT_FOLDER).toRealPath();
                 file = folder.resolve(fileName).normalize();
             }
-            //parent_folder for admin
+            //parent_folder for dev
             catch(IOException ioe){
                 out.println("ERR PARENTFOLDER");
                 return;
             }
-
-
 
             //don't check if is null bc -> return if PARENT_FOLDER is 404
 
